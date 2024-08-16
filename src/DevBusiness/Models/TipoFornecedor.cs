@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace DevBusiness.Models
 {
-    public abstract class Entity
+    public enum TipoFornecedor
     {
-        protected Entity()
-        {
-            Id = Guid.NewGuid();
-        }
-
-        public Guid Id { get; set; }
+        PessoaFisica = 1,
+        PessoaJuridica
     }
 }

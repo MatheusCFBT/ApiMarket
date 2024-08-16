@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevBusiness.Models
 {
-    public class Endereco
+    public class Endereco : Entity
     {
         public Guid FornecedorId { get; set; }
 
