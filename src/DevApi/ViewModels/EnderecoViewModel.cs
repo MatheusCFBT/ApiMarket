@@ -11,6 +11,7 @@ namespace DevApi.ViewModels
         [StringLength(200, MinimumLength = 2, ErrorMessage = "O campo {0} precisa conter entre {2} e {1} caracteres")]
         public string? Logradouro { get; set; }
 
+        [Display(Name = "Número")]
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [StringLength(50, MinimumLength = 1, ErrorMessage = "O campo {0} precisa conter entre {2} e {1} caracteres")]
         public string? Numero { get; set; }
