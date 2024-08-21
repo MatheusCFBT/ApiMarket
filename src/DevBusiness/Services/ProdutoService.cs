@@ -1,21 +1,22 @@
 ﻿using DevBusiness.Interfaces;
 using DevBusiness.Models;
+using DevBusiness.Validations;
 
 namespace DevBusiness.Services
 {
     public class ProdutoService : BaseService, IProdutoService
     {
-        public Task Adicionar(Produto produto)
+        public async Task Adicionar(Produto produto)
         {
-            throw new NotImplementedException();
+            if (!ExecutarValidacao(new ProdutoValidation(), produto)) return;
         }
 
-        public Task Atualizar(Produto produto)
+        public async Task Atualizar(Produto produto)
         {
-            throw new NotImplementedException();
+            if (!ExecutarValidacao(new ProdutoValidation(), produto)) return;
         }
 
-        public Task Remover(Produto produto)
+        public async Task Remover(Produto produto)
         {
             throw new NotImplementedException();
         }
