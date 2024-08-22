@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace DevBusiness.Interfaces
 {
-    public interface IProdutoService
+    public interface IProdutoService : IDisposable
     {
         Task Adicionar(Produto produto);
 
         Task Atualizar(Produto produto);
 
-        Task Remover(Produto produto);
+        Task Remover(Guid id);
     }
 }

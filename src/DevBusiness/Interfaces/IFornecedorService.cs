@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DevBusiness.Interfaces
 {
-    public interface IFornecedorService
+    public interface IFornecedorService : IDisposable
     {
         Task Adicionar(Fornecedor fornecedor);
 
