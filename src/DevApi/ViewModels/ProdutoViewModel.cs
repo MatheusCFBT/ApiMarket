@@ -26,10 +26,12 @@ namespace DevApi.ViewModels
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public decimal Valor { get; set; }
 
+        [ScaffoldColumn(false)]
         public DateTime DataCadastro { get; set; }
 
         public bool Ativo { get; set; }
 
+        [ScaffoldColumn(false)]
         public string? NomeFornecedor { get; set; }
     }
 }
