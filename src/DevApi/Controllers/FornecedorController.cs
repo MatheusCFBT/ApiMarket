@@ -83,16 +83,19 @@ namespace DevApi.Controllers
             return Ok(fornecedor);
         }
 
+        [NonAction]
         public async Task<IEnumerable<FornecedorViewModel>> ObterTodos()
         {
             return _mapper.Map<IEnumerable<FornecedorViewModel>>(await _fornecedorRepository.ObterTodos());
         }
 
+        [NonAction]
         public async Task<FornecedorViewModel> ObterFornecedorProdutosEndereco(Guid id)
         {
             return _mapper.Map<FornecedorViewModel>(await _fornecedorRepository.ObterFornecedorProdutosEndereco(id));
         }
 
+        [NonAction]
         public async Task<FornecedorViewModel> ObterFornecedorEndereco(Guid id)
         {
             return _mapper.Map<FornecedorViewModel>(await _fornecedorRepository.ObterFornecedorEndereco(id));
