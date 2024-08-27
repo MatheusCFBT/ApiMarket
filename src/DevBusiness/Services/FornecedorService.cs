@@ -64,7 +64,7 @@ namespace DevBusiness.Services
 
             var endereco = await _enderecoRepository.ObterEnderecoPorFornecedor(id);
 
-            if (endereco == null)
+            if (endereco != null)
             {
                 await _enderecoRepository.Remover(endereco.Id);
             }
