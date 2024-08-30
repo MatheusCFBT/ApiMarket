@@ -14,7 +14,8 @@ builder
     .AddApiConfig()
     .AddSwaggerConfig()
     .ResolveDependencies()
-    .AddDbContextConfig();
+    .AddDbContextConfig()
+    .AddCorsConfig();
 
 var app = builder.Build();
 
