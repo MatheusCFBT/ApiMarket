@@ -1,4 +1,6 @@
 # ApiMarket
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
 ## About
 ApiMarket is an application developed in C# aimed at creating an e-commerce platform using REST APIs. The project utilizes a layered architecture, ensuring a clear separation of responsibilities, which simplifies maintenance and enhances the scalability of the application. The application also leverages SQL Server for database management and Entity Framework for ORM (Object-Relational Mapping).
 
