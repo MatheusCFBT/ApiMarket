@@ -100,13 +100,13 @@ namespace DevApi.Controllers
         }
 
         [NonAction]
-        public async Task<IEnumerable<ProdutoViewModel>> ObterTodos()
+        private async Task<IEnumerable<ProdutoViewModel>> ObterTodos()
         {
             return _mapper.Map<IEnumerable<ProdutoViewModel>>(await _produtoRepository.ObterProdutosFornecedores());
         }
 
         [NonAction]
-        public async Task<ProdutoViewModel> ObterPorId(Guid id)
+        private async Task<ProdutoViewModel> ObterPorId(Guid id)
         {
             return _mapper.Map<ProdutoViewModel>(await _produtoRepository.ObterPorId(id));
         }

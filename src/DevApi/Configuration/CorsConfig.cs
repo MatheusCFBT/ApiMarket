@@ -11,8 +11,7 @@ namespace DevApi.Configuration
                 options.AddPolicy("Development",
                 builder => builder.AllowAnyOrigin()
                 .AllowAnyMethod()
-                .AllowAnyHeader()
-                .AllowCredentials());
+                .AllowAnyHeader());
             });
 
             return builder;
